@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <!-- Slat Pattern (Painel Ripado Preto) -->
+    <pattern id="slats-pattern" width="8" height="120" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="5.5" height="120" fill="#1C1C1E"/>
+      <line x1="0.5" y1="0" x2="0.5" y2="120" stroke="#2D2D32" stroke-width="0.8"/>
+      <rect x="5.5" y="0" width="2.5" height="120" fill="#080809"/>
+    </pattern>
+
+    <!-- Metallic Gold Gradient for B -->
+    <linearGradient id="gold-bevel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8C35A"/>
+      <stop offset="45%" stop-color="#C59B27"/>
+      <stop offset="100%" stop-color="#8F6A12"/>
+    </linearGradient>
+
+    <!-- White/Platinum Gradient for D -->
+    <linearGradient id="white-bevel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#F0F0F2"/>
+      <stop offset="100%" stop-color="#CECED4"/>
+    </linearGradient>
+
+    <!-- Drop shadow for 3D realism on the slatted background -->
+    <filter id="slat-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2.5" dy="3.5" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Wood Slatted Badge -->
+  <circle cx="60" cy="60" r="57" fill="#121214"/>
+  <circle cx="60" cy="60" r="57" fill="url(#slats-pattern)"/>
+  
+  <!-- Outer Gold & Dark Rim -->
+  <circle cx="60" cy="60" r="57" fill="none" stroke="rgba(197, 155, 39, 0.55)" stroke-width="1.8"/>
+  <circle cx="60" cy="60" r="55.5" fill="none" stroke="rgba(0, 0, 0, 0.8)" stroke-width="1"/>
+
+  <!-- 3D Monogram Group -->
+  <g filter="url(#slat-shadow)">
+    <!-- D Letter (White, with sharp architectural cut) -->
+    <path d="M 28 26 
+             H 48 
+             C 61 26 70 33 70 47 
+             C 70 53 68 59 63 63 
+             L 54 55 
+             C 57 52 58 49 58 47 
+             C 58 39 52 36 45 36 
+             H 38 
+             V 62 
+             H 48 
+             L 43 72 
+             H 28 
+             Z" 
+          fill="url(#white-bevel)"/>
+
+    <!-- B Letter (Gold, interlocking) -->
+    <path d="M 52 26 
+             H 69 
+             C 79 26 86 31 86 39 
+             C 86 45 82 49 76 50 
+             C 84 51 89 56 89 63 
+             C 89 72 81 72 70 72 
+             H 48 
+             L 53 62 
+             H 70 
+             C 74 62 78 61 78 57 
+             C 78 52 74 51 68 51 
+             H 60 
+             V 45 
+             H 67 
+             C 72 45 76 44 76 39 
+             C 76 36 72 36 67 36 
+             H 57 
+             L 55 42 
+             L 49 37 
+             Z" 
+          fill="url(#gold-bevel)"/>
+  </g>
+
+  <!-- DIBRUS engraved below monogram -->
+  <text x="60" y="93" 
+        text-anchor="middle" 
+        font-family="'Inter', -apple-system, sans-serif" 
+        font-size="11.5" 
+        font-weight="900" 
+        letter-spacing="3.5" 
+        fill="#FFFFFF">DIBRUS</text>
+  
+  <text x="60" y="103" 
+        text-anchor="middle" 
+        font-family="'Inter', -apple-system, sans-serif" 
+        font-size="4.8" 
+        font-weight="600" 
+        letter-spacing="2" 
+        fill="#C59B27">MÓVEIS PLANEJADOS</text>
+</svg>

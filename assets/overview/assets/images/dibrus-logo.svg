@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" width="340" height="80">
+  <defs>
+    <!-- Slat Pattern (Painel Ripado Preto) -->
+    <pattern id="logo-slats" width="6" height="80" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="4" height="80" fill="#1C1C1E"/>
+      <line x1="0.5" y1="0" x2="0.5" y2="80" stroke="#2D2D32" stroke-width="0.6"/>
+      <rect x="4" y="0" width="2" height="80" fill="#080809"/>
+    </pattern>
+
+    <!-- Metallic Gold Gradient for B -->
+    <linearGradient id="logo-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8C35A"/>
+      <stop offset="45%" stop-color="#C59B27"/>
+      <stop offset="100%" stop-color="#8F6A12"/>
+    </linearGradient>
+
+    <!-- White/Platinum Gradient for D -->
+    <linearGradient id="logo-white" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="65%" stop-color="#F0F0F2"/>
+      <stop offset="100%" stop-color="#CECED4"/>
+    </linearGradient>
+
+    <!-- Drop shadow for 3D realism -->
+    <filter id="logo-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="2" dy="2.5" stdDeviation="2" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Emblem on the Left -->
+  <g transform="translate(4, 2)">
+    <circle cx="38" cy="38" r="36" fill="#121214"/>
+    <circle cx="38" cy="38" r="36" fill="url(#logo-slats)"/>
+    <circle cx="38" cy="38" r="36" fill="none" stroke="rgba(197, 155, 39, 0.55)" stroke-width="1.5"/>
+    <circle cx="38" cy="38" r="35" fill="none" stroke="rgba(0, 0, 0, 0.8)" stroke-width="0.8"/>
+
+    <!-- Scaled 3D Monogram DB -->
+    <g transform="translate(38, 38) scale(0.68) translate(-60, -52)" filter="url(#logo-shadow)">
+      <!-- D Letter (White) -->
+      <path d="M 28 26 H 48 C 61 26 70 33 70 47 C 70 53 68 59 63 63 L 54 55 C 57 52 58 49 58 47 C 58 39 52 36 45 36 H 38 V 62 H 48 L 43 72 H 28 Z" fill="url(#logo-white)"/>
+      <!-- B Letter (Gold) -->
+      <path d="M 52 26 H 69 C 79 26 86 31 86 39 C 86 45 82 49 76 50 C 84 51 89 56 89 63 C 89 72 81 72 70 72 H 48 L 53 62 H 70 C 74 62 78 61 78 57 C 78 52 74 51 68 51 H 60 V 45 H 67 C 72 45 76 44 76 39 C 76 36 72 36 67 36 H 57 L 55 42 L 49 37 Z" fill="url(#logo-gold)"/>
+    </g>
+  </g>
+
+  <!-- Typographic Lockup on the Right -->
+  <text x="94" y="45" 
+        font-family="'Bebas Neue', 'Inter', Impact, sans-serif" 
+        font-size="36" 
+        letter-spacing="4" 
+        fill="#FFFFFF">DIBRUS</text>
+
+  <text x="96" y="62" 
+        font-family="'Inter', sans-serif" 
+        font-size="9" 
+        font-weight="600" 
+        letter-spacing="4.5" 
+        fill="#C59B27">MÓVEIS PLANEJADOS</text>
+</svg>

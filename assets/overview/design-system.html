@@ -546,6 +546,47 @@ html.ds-embed .nav, html.ds-embed .mobile-nav { visibility: hidden; }
 </div>
 </div>
 </footer>
+<!-- Theme Detail Modal (Ambientes Dibrus) -->
+<div class="theme-modal-backdrop" id="themeModalBackdrop" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="theme-modal-container" id="themeModalContainer">
+    <button class="theme-modal-close" id="themeModalClose" aria-label="Fechar detalhes">&times;</button>
+    <div class="theme-modal-media">
+      <img id="themeModalImg" src="assets/images/project-01-kitchen.jpg" alt="Ambiente Dibrus Móveis Planejados"/>
+      <div class="theme-modal-badge" id="themeModalBadge">Ambiente 01 / 08</div>
+      <div class="theme-modal-nav-btns">
+        <button class="theme-nav-btn" id="themeModalPrev" aria-label="Ambiente anterior" title="Anterior">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+        <button class="theme-nav-btn" id="themeModalNext" aria-label="Próximo ambiente" title="Próximo">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="theme-modal-body">
+      <div>
+        <div class="theme-modal-tag">
+          <span class="theme-modal-tag-line"></span>
+          <span class="theme-modal-tag-text" id="themeModalTag">Especialidade Sob Medida</span>
+        </div>
+        <h3 class="theme-modal-title" id="themeModalTitle">COZINHAS GOURMET</h3>
+        <p class="theme-modal-subtitle" id="themeModalSubtitle">Ergonomia, tecnologia e alta gastronomia em harmonia perfeita.</p>
+        <p class="theme-modal-desc" id="themeModalDesc">Descrição detalhada do ambiente...</p>
+        
+        <div class="theme-modal-features" id="themeModalFeatures">
+          <!-- preenchido dinamicamente via interactions.js -->
+        </div>
+      </div>
+      
+      <div class="theme-modal-action">
+        <a class="theme-modal-cta" id="themeModalCta" href="#booking">
+          <span>Solicitar Orçamento</span>
+          <svg aria-hidden="true" class="iconify" data-icon="solar:arrow-right-linear" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16m0 0l-6-6m6 6l-6 6"/></svg>
+        </a>
+        <span class="theme-modal-counter" id="themeModalCounter">01 / 08</span>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- js -->
 <!-- Interações da página: scroll da nav, menu mobile, scroll-reveal, slider de depoimentos, smooth scroll, parallax do hero, animação de contadores -->
 <script src="assets/js/interactions.js"></script>

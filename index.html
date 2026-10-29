@@ -1185,7 +1185,7 @@ body.is-components #overview-frame { visibility: hidden; }
   var linkO = document.getElementById('nav-overview'), linkC = document.getElementById('nav-components');
   var isComp = function (h) { return h === '#components' || h.indexOf('#components-') === 0; };
   var mode = 'overview', frameY = 0;
-  if (!COMPONENTS_ENABLED) linkC.setAttribute('aria-disabled', 'true');
+  if (linkC && !COMPONENTS_ENABLED) linkC.setAttribute('aria-disabled', 'true');
 
   /* the page's own nav rule: .scrolled past 80px of the Overview's scroll; always on in Components */
   function placeNav() { nav.classList.toggle('scrolled', mode === 'components' || frameY > 80); }
@@ -1196,8 +1196,8 @@ body.is-components #overview-frame { visibility: hidden; }
     var comp = isComp(h);
     mode = comp ? 'components' : 'overview';
     body.classList.toggle('is-components', comp);
-    linkO.classList.toggle('is-on', !comp);
-    linkC.classList.toggle('is-on', comp);
+    if (linkO) linkO.classList.toggle('is-on', !comp);
+    if (linkC) linkC.classList.toggle('is-on', comp);
     placeNav();
     if (window.dsComponents) window.dsComponents(h);
   }
@@ -1206,6 +1206,11 @@ body.is-components #overview-frame { visibility: hidden; }
     if (e.source !== frame.contentWindow || !e.data) return;
     if (e.data.ds === 'ready') body.classList.add('ds-overview-ready');
     else if (e.data.ds === 'scroll') { frameY = e.data.y || 0; placeNav(); }
+    else if (e.data.ds === 'modal') {
+      nav.style.transition = 'opacity 0.3s ease';
+      nav.style.opacity = e.data.open ? '0' : '1';
+      nav.style.pointerEvents = e.data.open ? 'none' : 'auto';
+    }
   });
 
   /* logo and CTA: back to the Overview and scroll it, as on the page (top / #booking) */

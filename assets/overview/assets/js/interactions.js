@@ -135,12 +135,12 @@ const themesData = [
         title: 'COZINHAS GOURMET',
         subtitle: 'Ergonomia, tecnologia e alta gastronomia em harmonia perfeita.',
         desc: 'Desenvolvemos cozinhas planejadas que equilibram estética contemporânea refinada e máxima funcionalidade culinária. Com ilhas esculpidas em materiais nobres, sistemas de amortecimento ocultos padrão europeu, iluminação linear em LED quente e divisores internos inteligentes, cada detalhe é concebido para transformar a convivência e o preparo gastronômico em momentos extraordinários.',
-        image: 'assets/images/project-01-kitchen.jpg',
+        image: 'assets/images/dibrus-cozinha-planejada.jpg',
         features: [
-            'Ilhas esculpidas com canaletas de LED e tomadas ocultas',
-            'Ferragens europeias com amortecimento suave',
-            'Divisores internos aveludados para talheres e louças',
-            'Revestimentos nobres de alta resistência a calor e umidade'
+            'Torre quente embutida para fornos e eletros de precisão',
+            'Nicho sob medida para geladeira com ventilação planejada',
+            'Gabinete inferior com acabamento nobre e corrediças ocultas',
+            'Armários aéreos com abertura suave e aproveitamento total do pé-direito'
         ]
     },
     {
@@ -162,13 +162,13 @@ const themesData = [
         tag: 'Conforto & Acústica',
         title: 'HOME THEATER & LIVING',
         subtitle: 'Imersão audiovisual com harmonia arquitetônica impecável.',
-        desc: 'Salas de estar e cinemas residenciais concebidos para proporcionar conforto absoluto sem fiação à mostra. Desenvolvemos painéis ripados contemporâneos em madeira nobre, nichos retroiluminados com controle dimmer de intensidade e móveis técnicos projetados para ventilação passiva de equipamentos eletrônicos e fidelidade acústica.',
-        image: 'assets/images/project-04-theater.jpg',
+        desc: 'Salas e dormitórios concebidos para proporcionar conforto absoluto sem fiação à mostra. Desenvolvemos painéis ripados contemporâneos em madeira nobre, gaveteiros organizadores sob medida, bancadas de apoio e móveis técnicos projetados para ventilação passiva de equipamentos e fidelidade acústica.',
+        image: 'assets/images/dibrus-painel-tv-dormitorio.jpg',
         features: [
-            'Fiação 100% embutida e gestão técnica de equipamentos',
-            'Painéis ripados contemporâneos com conforto acústico',
-            'Racks suspensos com ventilação passiva e portas em tela acústica',
-            'Nichos em balanço com retroiluminação linear em LED'
+            'Painel ripado vertical contemporâneo com fiação 100% embutida',
+            'Cômoda gaveteiro com puxadores metálicos slim e corrediças suaves',
+            'Bancada suspensa multifuncional para maquiagem ou apoio',
+            'Prateleira superior para objetos decorativos e iluminação cênica'
         ]
     },
     {
@@ -176,13 +176,13 @@ const themesData = [
         tag: 'Intimidade & Relaxamento',
         title: 'SUÍTES & DORMITÓRIOS',
         subtitle: 'Refúgios de acolhimento e repouso milimetricamente pensados.',
-        desc: 'Criamos dormitórios que convidam ao descanso com soluções sob medida que aproveitam cada centímetro da planta. Cabeceiras estofadas integradas a painéis de madeira, mesas de cabeceira suspensas com portas USB e carregadores por indução, e armários discretos com fechamento suave proporcionam atmosfera intimista e repousante.',
-        image: 'assets/images/project-09-suite.jpg',
+        desc: 'Criamos dormitórios que convidam ao descanso com soluções sob medida que aproveitam cada centímetro da planta. Roupeiros de chão ao teto, pontes aéreas integradas sobre a cabeceira, mesas de cabeceira embutidas e armários discretos com fechamento suave proporcionam atmosfera intimista e máxima capacidade de armazenamento.',
+        image: 'assets/images/dibrus-suite-dormitorio-completo.jpg',
         features: [
-            'Cabeceiras estofadas integradas a painéis de madeira nobre',
-            'Criados-mudos suspensos com carregamento por indução',
-            'Iluminação indireta quente pensada para relaxamento',
-            'Aproveitamento milimétrico de cada espaço com roupeiros inteligentes'
+            'Ponte aérea com armários suspensos integrados sobre a cama',
+            'Roupeiro planejado do chão ao teto com divisões personalizadas',
+            'Criados-mudos embutidos simétricos com gaveteiros funcionais',
+            'Aproveitamento milimétrico de cada vão e canto do ambiente'
         ]
     },
     {

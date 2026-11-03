@@ -399,3 +399,40 @@ window.addEventListener('keydown', (e) => {
     }
 });
 
+// ========== BEFORE & AFTER INTERACTION ==========
+document.querySelectorAll('.ba-card').forEach((card) => {
+    const btns = card.querySelectorAll('.ba-btn');
+    const imgBefore = card.querySelector('.ba-img-before');
+    const imgAfter = card.querySelector('.ba-img-after');
+    const badge = card.querySelector('.ba-badge');
+
+    btns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            const target = btn.getAttribute('data-target'); // 'before' or 'after'
+            btns.forEach(b => b.classList.remove('is-active'));
+            btn.classList.add('is-active');
+
+            if (target === 'before') {
+                imgAfter.classList.remove('is-active');
+                imgAfter.classList.add('is-hidden');
+                imgBefore.classList.remove('is-hidden');
+                imgBefore.classList.add('is-active');
+                if (badge) {
+                    badge.textContent = badge.getAttribute('data-before-text') || 'ANTES DA OBRA';
+                    badge.classList.add('is-before');
+                }
+            } else {
+                imgBefore.classList.remove('is-active');
+                imgBefore.classList.add('is-hidden');
+                imgAfter.classList.remove('is-hidden');
+                imgAfter.classList.add('is-active');
+                if (badge) {
+                    badge.textContent = badge.getAttribute('data-after-text') || 'DEPOIS: PROJETO FINALIZADO';
+                    badge.classList.remove('is-before');
+                }
+            }
+        });
+    });
+});
+
+
